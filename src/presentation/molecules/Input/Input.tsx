@@ -20,7 +20,7 @@ export const Input = ({
   formSettings,
   ...props
 }: InputProps) => {
-  const { setValue, values, handleChange } = formSettings;
+  const { setValue, values, handleChange, handleBlur, touched, errors } = formSettings;
   const [typeInput, setTypeInput] = useState<"text" | "password">(
     !!isPassword ? "password" : "text"
   );
@@ -44,12 +44,10 @@ export const Input = ({
         value={values![inputName]}
         placeholder={inputText}
         onChange={handleChange}
+        onBlur={handleBlur}
         autoComplete="off"
         {...props}
       />
-      <label htmlFor={inputName} className="form__label">
-        {inputText}
-      </label>
       {isPassword ? (
         <button type="button" className="clear-icon" onClick={handleToggleShowPassword}>
           {showPassword ? <IconVisibilityOff /> : <IconVisibilityOn />}
@@ -63,6 +61,12 @@ export const Input = ({
           <IconClose />
         </button>
       )}
+      <label htmlFor={inputName} className="form__label">
+        {inputText}
+      </label>
+      <span style={{ color: "var(--mu-error)", marginTop: "5px" }}>
+        {touched[inputName] && !!errors[inputName] ? errors[inputName]?.toString() : ""}
+      </span>
     </div>
   );
 };

@@ -12,8 +12,8 @@ export const useFormSettings = ({ sendCredentials }: useFormSettingsProps) => {
   const initialValues: FormValues = { ...loginEmpty };
 
   const validationSchema = Yup.object({
-    userName: Yup.string().required("Required"),
-    password: Yup.string().required("Required"),
+    userName: Yup.string().required("El Usuario es un campo requerido."),
+    password: Yup.string().required("La Contraseña es un campo requerido."),
   });
 
   const formik = useFormik({

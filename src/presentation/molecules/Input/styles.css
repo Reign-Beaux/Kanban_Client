@@ -2,6 +2,7 @@
   position: relative;
   padding: 15px 0 0;
   margin-top: 10px;
+  text-align: left;
 }
 
 .form__field {
@@ -16,6 +17,7 @@
   background: transparent;
   transition: border-color 0.2s;
   caret-color: var(--mu-text);
+  margin-bottom: 3px;
 }
 
 .form__field::placeholder {
