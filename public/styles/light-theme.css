@@ -1,0 +1,67 @@
+:root {
+  /*
+  --dark-primary: hsl(201, 98%, 41%);
+  --light-primary: hsl(199, 92%, 85%);
+  --primary: hsl(199, 98%, 48%);
+
+  --accent: hsl(200, 18%, 46%);
+
+  --text: hsl(0, 0%, 100%);
+  --primary-text: hsl(0, 0%, 13%);
+  --disabled-text: hsl(0, 0%, 46%);
+
+  --divider: hsl(0, 0%, 74%);
+
+  
+  --background: hsl(0, 0%, 80%);
+
+  --button: hsl(199, 98%, 48%);
+  --button-hover: hsl(199, 98%, 43%);
+  --button-active: hsl(199, 98%, 38%);
+  --button-disabled: hsl(199, 98%, 68%);
+
+  --success: #198754;
+  --info: #0dcaf0;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  */
+  --white: hsl(0, 0%, 90%);
+
+  --background: hsl(202, 22%, 90%);
+
+  --button-color: hsl(202, 22%, 90%);
+  --button-background: hsl(204, 20%, 50%);
+  --button-hover: hsl(204, 20%, 40%);
+  --button-active: hsl(204, 20%, 30%);
+  --button-disabled: var(--white);
+
+
+  --card-background: var(--white);
+  --card-border: hsl(202, 22%, 70%);
+
+
+  --mu-color-1: #e0e7eb;
+  --mu-color-1-hover: #c2ced6;
+  --mu-color-2: #a3b6c2;
+  --mu-color-2-hover: #859ead;
+  --mu-color-3: #668599;
+  --mu-color-3-hover: #526b7a;
+
+  --mu-succes: #50be50;
+  --mu-succes-hover: #3ba03b;
+  --mu-info: #6eb3f7;
+  --mu-info-hover: #3d99f5;
+  --mu-warning: #bebe50;
+  --mu-warning-hover: #a0a03b;
+  --mu-error: #be5050;
+  --mu-error-hover: #a03b3b;
+
+  --mu-contrast-1: #e9a449;
+  --mu-contrast-1-hover: #e38d1c;
+  --mu-contrast-2: #613ea8;
+  --mu-contrast-2-hover: #4c3082;
+
+  --mu-text-soft: #5988a6;
+  --mu-text: #365263;
+
+}

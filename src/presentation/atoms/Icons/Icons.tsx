@@ -1,0 +1,11 @@
+export const IconAdd = () => <i className="fa-solid fa-plus"></i>;
+export const IconCheck = () => <i className="fa-solid fa-check"></i>;
+export const IconClose = () => <i className="fa-solid fa-xmark"></i>;
+export const IconDelete = () => <i className="fa-solid fa-trash"></i>;
+export const IconEdit = () => <i className="fa-solid fa-pen-to-square"></i>;
+export const IconLogin = () => <i className="fa-solid fa-arrow-right-to-bracket"></i>;
+export const IconLogout = () => <i className="fa-solid fa-arrow-right-from-bracket"></i>;
+export const IconSearch = () => <i className="fa-solid fa-magnifying-glass"></i>;
+export const IconSave = () => <i className="fa-solid fa-floppy-disk"></i>;
+export const IconVisibilityOn = () => <i className="fa-solid fa-eye"></i>;
+export const IconVisibilityOff = () => <i className="fa-solid fa-eye-slash"></i>;

@@ -1,0 +1,8 @@
+.anchor {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.anchor:hover {
+  font-weight: bold;
+}
