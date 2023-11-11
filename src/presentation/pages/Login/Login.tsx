@@ -1,7 +1,7 @@
-import { Anchor, Card } from "@/presentation/atoms";
-import { Button, Input } from "@/presentation/molecules";
 import "./styles.css";
 import { useActions } from "./loginHandler";
+import { Input, Button } from "@/presentation/components/composites";
+import { Card, Anchor } from "@/presentation/components/elements";
 
 export const Login = () => {
   const formSettings = useActions();
