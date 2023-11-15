@@ -1,10 +1,10 @@
 import { Button, Input } from "@/presentation/components/composites";
 import { Anchor, Card } from "@/presentation/components/elements";
-import { useActions } from "./loginHandler";
+import { useLoginHandler } from "./loginHandler";
 import "./styles.css";
 
 export const Login = () => {
-  const formSettings = useActions();
+  const formSettings = useLoginHandler();
 
   return (
     <Card className="login-container">

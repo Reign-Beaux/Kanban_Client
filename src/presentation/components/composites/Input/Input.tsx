@@ -20,7 +20,7 @@ export const Input = ({
   formSettings,
   ...props
 }: InputProps) => {
-  const { setValue, values, handleChange, handleBlur, touched, errors } = formSettings;
+  const { setFieldValue, values, handleChange, handleBlur, touched, errors } = formSettings;
   const [typeInput, setTypeInput] = useState<"text" | "password">(
     !!isPassword ? "password" : "text"
   );
@@ -32,7 +32,7 @@ export const Input = ({
   };
 
   const handleClearClick = () => {
-    setValue(inputName, "");
+    setFieldValue(inputName, "");
   };
 
   return (

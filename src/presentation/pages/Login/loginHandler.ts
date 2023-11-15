@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { useFormSettings } from "./helpers";
 import { Login } from "@/application/common/statics";
 
-export const useActions = () => {
+export const useLoginHandler = () => {
   const { setToken, clearToken } = useSessionStore((state) => state);
   const { post } = useAxios();
   const navigate = useNavigate();

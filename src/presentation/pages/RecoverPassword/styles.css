@@ -1,4 +1,4 @@
-.temporal-password-container {
+.recover-password-container {
   width: 30%;
   position: absolute;
   top: 50%;
@@ -7,7 +7,7 @@
   text-align: center;
 }
 
-.login-button {
+.recover-password-button {
   margin-top: 15px;
   margin-bottom: 15px;
   width: 100%;

@@ -12,8 +12,7 @@ export const useFormSettings = ({ sendCredentials }: useFormSettingsProps) => {
   const initialValues: FormValues = { ...loginEmpty };
 
   const validationSchema = Yup.object({
-    userName: Yup.string().required("El Usuario es un campo requerido."),
-    password: Yup.string().required("La Contraseña es un campo requerido."),
+    userName: Yup.string().required("El Usuario es un campo requerido.")
   });
 
   const formik = useFormik({
@@ -22,11 +21,13 @@ export const useFormSettings = ({ sendCredentials }: useFormSettingsProps) => {
     onSubmit: sendCredentials,
   });
 
+  const setValue = (field: string, newValue: any) => formik.setFieldValue(field, newValue);
+
   return {
     handleSubmit: formik.handleSubmit,
     handleChange: formik.handleChange,
     handleBlur: formik.handleBlur,
-    setFieldValue: formik.setFieldValue,
+    setFieldValue: setValue,
     touched: formik.touched,
     values: formik.values,
     errors: formik.errors,
