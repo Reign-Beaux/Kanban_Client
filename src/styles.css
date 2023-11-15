@@ -6,8 +6,3 @@ body {
   margin: 0px;
   background-color: var(--background);
 }
-
-/* input:-webkit-autofill,
-input:-webkit-autofill:focus {
-  transition: background-color 0s 600000s, color 0s 600000s;
-} */

@@ -1,10 +1,10 @@
 import { LoginModel } from "@/application/common/models";
+import { Login } from "@/application/common/statics";
 import { useAxios } from "@/application/libraries/axios/useAxios";
 import { useSessionStore } from "@/application/libraries/zustand";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useFormSettings } from "./helpers";
-import { Login } from "@/application/common/statics";
 
 export const useLoginHandler = () => {
   const { setToken, clearToken } = useSessionStore((state) => state);
