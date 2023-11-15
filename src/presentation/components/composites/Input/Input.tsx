@@ -1,5 +1,5 @@
 import { FormSettings } from "@/application/common/models";
-import { IconClose, IconVisibilityOff, IconVisibilityOn } from "@/presentation/atoms";
+import { IconClose, IconVisibilityOff, IconVisibilityOn } from "@/presentation/components/elements";
 import { useState } from "react";
 import "./styles.css";
 
