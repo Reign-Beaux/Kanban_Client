@@ -3,12 +3,12 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 
 export interface useFormSettingsProps {
-  sendCredentials: (values: LoginModel) => Promise<void>;
+  sendMail: (values: LoginModel) => Promise<void>;
 }
 
 interface FormValues extends LoginModel {}
 
-export const useFormSettings = ({ sendCredentials }: useFormSettingsProps) => {
+export const useFormSettings = ({ sendMail }: useFormSettingsProps) => {
   const initialValues: FormValues = { ...loginEmpty };
 
   const validationSchema = Yup.object({
@@ -18,16 +18,14 @@ export const useFormSettings = ({ sendCredentials }: useFormSettingsProps) => {
   const formik = useFormik({
     initialValues,
     validationSchema,
-    onSubmit: sendCredentials,
+    onSubmit: sendMail,
   });
-
-  const setValue = (field: string, newValue: any) => formik.setFieldValue(field, newValue);
 
   return {
     handleSubmit: formik.handleSubmit,
     handleChange: formik.handleChange,
     handleBlur: formik.handleBlur,
-    setFieldValue: setValue,
+    setFieldValue: formik.setFieldValue,
     touched: formik.touched,
     values: formik.values,
     errors: formik.errors,
