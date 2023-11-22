@@ -4,4 +4,5 @@ export enum Users {
 
 export enum Login {
   AUTHENTICATE = "Login/Authenticate",
+  RECOVER_PASSWORD = "Login/RecoverPassword",
 }
