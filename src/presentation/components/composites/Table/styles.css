@@ -5,6 +5,7 @@ html {
 
 table {
   border: 1px solid lightgray;
+  width: 100%;
 }
 
 tbody {
@@ -23,4 +24,21 @@ tfoot {
 
 tfoot th {
   font-weight: normal;
+}
+
+.table-container {
+  width: 95%;
+  overflow: scroll auto;
+  height: fit-content;
+  margin-top: 15px;
+}
+
+.paginator-container {
+  width: 95%;
+  padding-top: 5px;
+  border: 1px solid lightgray;
+  border-top: none;
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
