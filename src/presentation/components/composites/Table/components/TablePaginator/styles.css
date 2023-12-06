@@ -1,0 +1,8 @@
+.paginator-container {
+  width: 95%;
+  padding-top: 5px;
+  border: 1px solid lightgray;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
