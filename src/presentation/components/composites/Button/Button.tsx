@@ -1,5 +1,4 @@
 import { Tooltip } from "@/presentation/components/elements";
-import { useEffect, useState } from "react";
 import "./styles.css";
 
 export interface ButtonProps
@@ -20,17 +19,7 @@ export const Button = ({
   tooltip = "",
   ...props
 }: ButtonProps) => {
-  const [classButton, setClassButton] = useState<string>("");
-
-  useEffect(() => {
-    if (isLoading) {
-      setClassButton("button button-loading");
-    } else if (isIcon) {
-      setClassButton("button-icon");
-    } else {
-      setClassButton("button");
-    }
-  }, [isLoading]);
+  const classButton = isLoading ? "button button-loading" : isIcon ? "button-icon" : "button";
 
   return (
     <>
