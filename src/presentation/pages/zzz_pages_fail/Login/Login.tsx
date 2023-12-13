@@ -4,7 +4,6 @@ import { useLoginHandler } from "./loginHandler";
 import "./styles.css";
 
 export const Login = () => {
-  debugger;
   const formSettings = useLoginHandler();
 
   return (

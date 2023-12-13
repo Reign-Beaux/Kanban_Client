@@ -7,7 +7,6 @@ import { useNavigate } from "react-router-dom";
 import { useFormSettings } from "./helpers";
 
 export const useLoginHandler = () => {
-  debugger;
   const { setToken, clearToken } = useSessionStore((state) => state);
   const { post } = useAxios();
   const navigate = useNavigate();

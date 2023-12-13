@@ -9,7 +9,6 @@ export interface useFormSettingsProps {
 interface FormValues extends LoginModel {}
 
 export const useFormSettings = ({ sendCredentials }: useFormSettingsProps) => {
-  debugger;
   const initialValues: FormValues = { ...loginEmpty };
 
   const validationSchema = Yup.object({
