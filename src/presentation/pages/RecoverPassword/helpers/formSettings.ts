@@ -1,18 +1,18 @@
-import { FormSettings, LoginModel, loginEmpty } from "@/application/common/models";
+import { FormSettings, OnlyString } from "@/application/common/models";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 
+interface FormValues extends OnlyString {}
+
 export interface useFormSettingsProps {
-  sendMail: (values: LoginModel) => Promise<void>;
+  sendMail: (values: OnlyString) => Promise<void>;
 }
 
-interface FormValues extends LoginModel {}
-
 export const useFormSettings = ({ sendMail }: useFormSettingsProps) => {
-  const initialValues: FormValues = { ...loginEmpty };
+  const initialValues: FormValues = { parameter: "" };
 
   const validationSchema = Yup.object({
-    userName: Yup.string().required("El Usuario es un campo requerido.")
+    parameter: Yup.string().required("El Usuario es un campo requerido."),
   });
 
   const formik = useFormik({
