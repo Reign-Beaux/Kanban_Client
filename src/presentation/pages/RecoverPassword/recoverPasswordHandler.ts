@@ -10,7 +10,7 @@ export const useRecoverPasswordHandler = () => {
 
   const sendMail = async (values: OnlyString) => {
     try {
-      const response = await post<Response, OnlyString>(Login.RECOVER_PASSWORD, values);
+      const response = await post<Response, OnlyString>(Login.RECOVER_PASSWORD_STEP_1, values);
       if (response.status === StatusResponse.OK) {
         navigate("/login");
       } else {
