@@ -1,4 +1,4 @@
-import { Home, Login, RecoverPassword } from "@/presentation/pages";
+import { ChangingPassword, Home, Login, RecoverPassword } from "@/presentation/pages";
 import { Navigate, RouteObject, createBrowserRouter } from "react-router-dom";
 import { RouteAccessControl } from ".";
 
@@ -6,6 +6,10 @@ const routes: RouteObject[] = [
   {
     path: "/",
     element: <RouteAccessControl element={<Home />} />,
+  },
+  {
+    path: "/changing-password/{token}",
+    element: <ChangingPassword />
   },
   {
     path: "/login",
