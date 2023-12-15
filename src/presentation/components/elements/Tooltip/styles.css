@@ -1,0 +1,30 @@
+/* Estilo para el contenedor del tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Estilo para el tooltip */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Posición arriba del elemento padre */
+  left: 50%;
+  margin-left: -60px; /* Centrar el tooltip horizontalmente */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Mostrar el tooltip cuando el mouse pasa sobre el contenedor */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

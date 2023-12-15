@@ -1,6 +1,10 @@
 import "./styles.css";
 
 export const IconAdd = () => <i className="fa-solid fa-plus icons"></i>;
+export const IconAngleLeft = () => <i className="fa-solid fa-angle-left"></i>;
+export const IconAnglesLeft = () => <i className="fa-solid fa-angles-left"></i>;
+export const IconAngleRight = () => <i className="fa-solid fa-angle-right"></i>;
+export const IconAnglesRight = () => <i className="fa-solid fa-angles-right"></i>;
 export const IconCheck = () => <i className="fa-solid fa-check icons"></i>;
 export const IconClose = () => <i className="fa-solid fa-xmark icons"></i>;
 export const IconDelete = () => <i className="fa-solid fa-trash icons"></i>;

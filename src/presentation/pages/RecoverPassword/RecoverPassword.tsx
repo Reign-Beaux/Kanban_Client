@@ -10,7 +10,7 @@ export const RecoverPassword = () => {
     <Card className="recover-password-container">
       <h1 style={{ color: "var(--mu-text)" }}>Recuperar contraseña</h1>
       <form onSubmit={formSettings.handleSubmit}>
-        <Input isClearable inputText="Usuario" inputName="userName" formSettings={formSettings} />
+        <Input isClearable inputText="Usuario" inputName="parameter" formSettings={formSettings} />
         <Anchor className="recover-password-button" to="/login" type="button">
           Cancelar
         </Anchor>
