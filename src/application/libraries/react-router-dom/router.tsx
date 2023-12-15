@@ -8,7 +8,7 @@ const routes: RouteObject[] = [
     element: <RouteAccessControl element={<Home />} />,
   },
   {
-    path: "/changing-password/{token}",
+    path: "/changing-password/:token",
     element: <ChangingPassword />
   },
   {
