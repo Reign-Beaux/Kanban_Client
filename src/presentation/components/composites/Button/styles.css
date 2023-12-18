@@ -43,6 +43,14 @@
   align-items: center;
 }
 
+.button-icon {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: var(--button-color);
+}
+
 @keyframes animloader {
   0% {
     box-shadow: 14px 0 0 -2px,  38px 0 0 -2px,  -14px 0 0 -2px,  -38px 0 0 -2px;
