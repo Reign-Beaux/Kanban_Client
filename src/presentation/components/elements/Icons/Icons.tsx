@@ -15,3 +15,4 @@ export const IconSearch = () => <i className="fa-solid fa-magnifying-glass icons
 export const IconSave = () => <i className="fa-solid fa-floppy-disk icons"></i>;
 export const IconVisibilityOn = () => <i className="fa-solid fa-eye icons"></i>;
 export const IconVisibilityOff = () => <i className="fa-solid fa-eye-slash icons"></i>;
+export const IconSuccess = () => <i className="fa-regular fa-circle-check"></i>
