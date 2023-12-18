@@ -8,6 +8,7 @@ import { useFormSettings } from "./helpers";
 import { clearSession, setSession } from "@/application/utils/helpers";
 
 export const useLoginHandler = () => {
+  debugger;
   const { post } = useAxios();
   const navigate = useNavigate();
 
