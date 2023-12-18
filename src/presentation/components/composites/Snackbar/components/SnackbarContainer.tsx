@@ -10,7 +10,11 @@ export const SnackbarContainer = () => {
   const classSnackbar = `snackbar snackbar-${typeMessage}`;
 
   useEffect(() => {
-    setTimeout(clearSnackbar!, 3000);
+    const timeoutId = setTimeout(clearSnackbar, 3000);
+
+    return () => {
+      clearTimeout(timeoutId);
+    };
   }, []);
 
   return (
