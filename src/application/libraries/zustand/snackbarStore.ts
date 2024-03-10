@@ -1,13 +1,15 @@
 import { create } from "zustand";
 
+type Message = "success" | "info" | "warning" | "error";
+
 interface StateValues {
   open: boolean;
   message: string;
-  typeMessage: "success" | "info" | "warning" | "error";
+  typeMessage: Message;
 }
 
 interface State extends StateValues {
-  setSnackbar: (newState: StateValues) => void;
+  setSnackbar: (newState: { message: string; typeMessage: Message }) => void;
   clearSnackbar: () => void;
 }
 
@@ -19,6 +21,7 @@ const stateEmpty: StateValues = {
 
 export const useSnackbarStore = create<State>()((set) => ({
   ...stateEmpty,
-  setSnackbar: (newState: StateValues) => set({ ...newState }),
+  setSnackbar: (newState: { message: string; typeMessage: Message }) =>
+    set({ ...newState, open: true }),
   clearSnackbar: () => set({ ...stateEmpty }),
 }));
